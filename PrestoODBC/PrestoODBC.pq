@@ -37,7 +37,8 @@ shared PrestoODBC.Contents = (host as text, port as number, catalog as text) =>
             host = host,
             port = port,
             catalog = catalog,
-            dsn = "Simba Presto"
+            dsn = "Simba Presto",
+            AllowMetadataFromMultipleCatalogs = 0 // Disable preview all catalogs - very slow 
         ],
 
         //
